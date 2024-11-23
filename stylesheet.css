@@ -44,6 +44,7 @@ header h1 {
     padding: 20px;
     margin-bottom: 50px;
     border-radius: 10px;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);
 }
 
 .registration button {
@@ -65,15 +66,8 @@ header h1 {
 
 .instagram-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 15px;
-}
-
-.instagram-gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
