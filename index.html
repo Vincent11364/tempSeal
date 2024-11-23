@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vincent Kostelijk">
+    <title>Vaarschool Seal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg" href="images/favicon.svg">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<header>
+    <!-- <h1>Seal Sailing School</h1> -->
+    <img class="title-logo" src="images/seallogo [black].svg" alt="Vaarschool Seal logo">
+</header>
+
+<div class="container">
+    <p class="description">
+        Leer zeilen bij vaarschool Seal! Een vaarschool waar je CWO zeildiploma's kan halen in en super gezellige en toch betaalbare week!
+    </p>
+
+    <div class="registration">
+        <p><strong>De inschrijvingen openen op 1 januari!</strong></p>
+        <p>Veel mensen weten niet dat wanneer ze op oudjaarsdag aan het aftellen zijn voor het nieuwe jaar, ze ook aan het aftellen zijn voor de opening van de inschrijvingen voor Seal.
+            Het is altijd een wedstrijd wie er zich als eerste heeft ingeschreven voor een spectaculaire zeilweek.
+        </p>
+        <button>Inschrijvingen cursisten</button>
+        <button>Inschrijvingen medewerkers</button>
+    </div>
+
+    <div class="socials-header">
+        <p>Check onze Instagram!</p>
+    </div>
+
+    <div class="instagram-gallery" id="instagram-gallery">
+        <!-- Instagram API photos will be inserted here -->
+        <!-- Example static images for demo purposes -->
+        <img src="https://via.placeholder.com/300x200" alt="Instagram Image 1">
+        <img src="https://via.placeholder.com/300x200" alt="Instagram Image 2">
+        <img src="https://via.placeholder.com/300x200" alt="Instagram Image 3">
+        <img src="https://via.placeholder.com/300x200" alt="Instagram Image 4">
+        <img src="https://via.placeholder.com/300x200" alt="Instagram Image 5">
+    </div>
+
+    <div>
+        <p><i>Jazeker, de website is weer veranderd! We zijn achter de schermen hard aan het werk om de website op een veilige en comfortabele plek te krijgen.
+            Hierdoor zullen er de komende tijd meer dingen veranderen aan de website.</i></p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Vaarschool Seal | Alle rechten voorbehouden</p>
+</footer>
+
+<script>
+// Example of how you could load Instagram photos dynamically (You need to replace this with actual API handling)
+function fetchInstagramPhotos() {
+    // This is where you'd fetch photos using Instagram's API.
+    // For now, it's using static images as placeholders.
+    const gallery = document.getElementById('instagram-gallery');
+    // Example: You'd populate the gallery with images from Instagram API
+    for (let i = 0; i < 5; i++) {
+        const img = document.createElement('img');
+        img.src = `https://via.placeholder.com/300x200?text=Instagram+Image+${i + 1}`;
+        img.alt = `Instagram Image ${i + 1}`;
+        gallery.appendChild(img);
+    }
+}
+
+// Simulating fetching Instagram photos
+fetchInstagramPhotos();
+</script>
+
+</body>
+</html>
