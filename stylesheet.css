@@ -3,6 +3,11 @@
     --lightpurple: #f1d6f6;
 }
 
+a {
+    color: inherit;
+    cursor: pointer;
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
