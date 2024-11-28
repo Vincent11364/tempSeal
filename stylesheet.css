@@ -53,13 +53,21 @@ header h1 {
 }
 
 .registration button {
-    background-color: #c7c7c7;
     color: white;
     border: none;
     padding: 15px 25px;
     font-size: 1em;
     margin: 10px;
     border-radius: 5px;
+}
+
+.button-active {
+    background-color: var(--purple);
+    cursor: pointer;
+}
+
+.button-inactive{
+    background-color: #c7c7c7;
 }
 
 .socials-header {
